@@ -32,7 +32,7 @@ void setup(void)
   Serial.begin(230400); //Inicializacion del puerto serial para la comunicacion con la PC
 
   radio.begin(); //Inicio del modulo nRF24L01+
-  radio.setPALevel(RF24_PA_HIGH);  // Configuracion en modo de maxima potencia
+  radio.setPALevel(RF24_PA_MAX);  // Configuracion en modo de maxima potencia
   radio.setDataRate(RF24_250KBPS); //Configuracion de la velocidad de transmision
   radio.setChannel(100); // Configuracion del canal de comunicacion
   //Apertura de los canales de comunicacion
