@@ -29,7 +29,7 @@ void setup(void)
   Serial.begin(115200);//Inicializacion del puerto serial en el caso de tener depuracion por PC
 
   radio.begin(); //Inicio del modulo nRF24L01+
-  radio.setPALevel(RF24_PA_HIGH);  // Configuracion en modo de baja potencia
+  radio.setPALevel(RF24_PA_MAX);  // Configuracion en modo de baja potencia
   radio.setDataRate(RF24_250KBPS);
   radio.setChannel(100); // Configuracion del canal de comunicacion
   //Apertura de los canales de comunicacion
