@@ -159,7 +159,7 @@ void loop(void)
     }
     Serial.println("********************************************************************");
     Serial.println("Test finalizado...");
-    Serial.print("Numero de datos errorenos recividos: ");
+    Serial.print("Numero de datos errorenos recibidos: ");
     Serial.println(error_cont);
     test = 0;
     error_cont = 0;
